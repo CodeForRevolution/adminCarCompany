@@ -1,0 +1,104 @@
+.dashboard{
+   height: 100vh;
+   width: 100vw;
+   background-color: green;
+}
+
+body::-webkit-scrollbar{
+display: none;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+       background-color: purple;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+   
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar{
+
+}
+
+/* #sidebar i:hover{
+    font-size: 30px;
+} */
+
+input[type="date"]{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: .5px solid grey;
+    color: grey;
+
+}
+
+input[type="date"]:focus {
+    outline: none; /* Remove default focus outline (optional) */
+    border: 2px solid #007bff; /* Change the border color on focus */
+  
+  }
+
+
+
+  #mainData{
+    height:100vh;
+    overflow-y: scroll;
+  }
+
+
+
+/* 
+  .accordion-button{
+   
+    
+  } */
+
+  #sidebarContainer{
+    height: 100%;
+    background-color: white;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  #sidebarContainer i{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accordion-button:focus{
+   box-shadow: none;
+  }
+
+
+  @media screen  and  (max-width:500px){
+
+    #mainData{
+        height: 81vh;
+        overflow-y: scroll;
+      }
+      #sidebarContainer{
+        height: 100%;
+        background-color: white;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+      }
+
+
+  }
