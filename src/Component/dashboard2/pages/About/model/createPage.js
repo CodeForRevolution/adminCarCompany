@@ -58,7 +58,7 @@ console.log("your props",props)
   //     async function getData() {
   //       try {
   //         const response = await axios.get(
-  //           `http://localhost:4000/api/v1/service/getById/${id}`
+  //           `https://apigarage.njssolutions.in/api/v1/service/getById/${id}`
   //         );
 
   //         setFormData({...response.data.data})
@@ -105,7 +105,7 @@ console.log("your props",props)
      
       if (!isUpdate) {
         // const response = await axios.post(
-        //   `http://localhost:4000/api/v1/service/new`,
+        //   `https://apigarage.njssolutions.in/api/v1/service/new`,
         //   formDataToSubmit
         // );
         // console.log("send the data to server for creation",formDataToSubmit)
@@ -114,7 +114,7 @@ console.log("your props",props)
 
         console.log("what you are updating",formDataToSubmit);
         const response = await axios.put(
-          `http://localhost:4000/api/v1/about/update/666be264d1be0b0894ea9251`,
+          `https://apigarage.njssolutions.in/api/v1/about/update/666be264d1be0b0894ea9251`,
           formDataToSubmit
         );
 

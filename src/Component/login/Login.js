@@ -3,11 +3,14 @@ import "./Login.css";
 import axios from "axios";
 import { LoadingButton } from "@mui/lab";
 import { LoginOutlined } from "@mui/icons-material";
-import logo from "../../assets/images/aries.png";
+import logo from "../../assets/images/logCarwala.png";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [formData, setFormData] = useState({email:"shakir973019@gmail.com",password:"shakirHero"});
+  const [formData, setFormData] = useState({
+    email: "shakir973019@gmail.com",
+    password: "shakirHero",
+  });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -23,7 +26,7 @@ const Login = () => {
       console.log("called the submit function");
       setLoading(true);
       const response = await axios.post(
-        "https://royal-webtech-backend.vercel.app/api/v1/user/login",
+        "https://apigarage.njssolutions.in/api/v1/user/login",
         formData
       );
       localStorage.setItem("user", JSON.stringify(response.data.data));
@@ -59,7 +62,7 @@ const Login = () => {
             <div class="row justify-content-center">
               <div class="col-lg-6">
                 <div class="loginright">
-                  <h3>Login to AstroSageInsights</h3>
+                  <h3>Login to GarageWallah</h3>
                   <form
                     class="pt-2"
                     onSubmit={(e) => {

@@ -11,10 +11,10 @@ function App() {
     <>
 <BrowserRouter>
 <Routes>
-<Route exact path='/' element={<Header/>}></Route>
-<Route exact path='/Login' element={<Login/>}></Route>     
-<Route exact path='/dashboard' element={<Dashboard/>}></Route>     
-<Route exact path='/dashboard2' element={<Home/>}></Route>     
+<Route exact path='/' element={<Login/>}></Route>
+{/* <Route exact path='/Login' element={<Login/>}></Route>      */}
+{/* <Route exact path='/dashboard' element={<Dashboard/>}></Route>      */}
+<Route exact path='/dashboard' element={<Home/>}></Route>     
 </Routes>
 </BrowserRouter>
     </>

@@ -31,7 +31,7 @@ const Blog = () => {
     setLoading(true);
     try {
       const deleted = await axios.delete(
-        `http://localhost:4000/api/v1/blog/delete/${id}`
+        `https://apigarage.njssolutions.in/api/v1/blog/delete/${id}`
       );
       dispatch(removeBlogs(id));
     } catch (error) {

@@ -31,7 +31,7 @@ const Service = () => {
     setLoading(true);
     try {
       const deleted = await axios.delete(
-        `http://localhost:4000/api/v1/question/delete/${id}`
+        `https://apigarage.njssolutions.in/api/v1/question/delete/${id}`
       );
       dispatch(removeQuestions(id));
     } catch (error) {

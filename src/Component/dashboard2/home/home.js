@@ -37,11 +37,11 @@ const Home = () => {
 
     async function fetchData() {
       try {
-         var AboutResponse = await axios.get("http://localhost:4000/api/v1/about/getById/666be264d1be0b0894ea9251");
-         var serviceResponse = await axios.get("http://localhost:4000/api/v1/service/getAll");
-       var questioinResponse = await axios.get("http://localhost:4000/api/v1/question/getAll");
+         var AboutResponse = await axios.get("https://apigarage.njssolutions.in/api/v1/about/getById/666be264d1be0b0894ea9251");
+         var serviceResponse = await axios.get("https://apigarage.njssolutions.in/api/v1/service/getAll");
+       var questioinResponse = await axios.get("https://apigarage.njssolutions.in/api/v1/question/getAll");
        // var notificationResponse = await axios.get("//get all the about data");
-        var blogResponse = await axios.get("http://localhost:4000/api/v1/blog/getAll");
+        var blogResponse = await axios.get("https://apigarage.njssolutions.in/api/v1/blog/getAll");
 console.log("blogresponse",blogResponse.data.data);
         dispatch(addBulkBlogs(blogResponse.data.data))
         dispatch(addAbout(AboutResponse.data.data))
