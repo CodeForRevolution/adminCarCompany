@@ -17,7 +17,7 @@ const CreatePage = (props) => {
 var {isUpdate,id,setModelOpen}=props.data;
 console.log("your props",props)
 
-  var [formData, setFormData] = useState({heading:"",subHeading:"",content:""});
+  var [formData, setFormData] = useState({heading:"",subHeading:"",content:"",title:"",keywords:""});
   const [loading, setLoading] = useState(false);
   const dispatch=useDispatch();
 
@@ -154,6 +154,30 @@ console.log("your props",props)
             name="heading"
             onChange={e=>handleChange("heading",e.target.value)}
             value={formData.heading}
+          ></TextField>
+        </div>
+
+        <div className="col-12 my-2">
+          <TextField
+            fullWidth
+            variant="outlined"
+            label="title"
+            size="small"
+            name="title"
+            onChange={e=>handleChange("title",e.target.value)}
+            value={formData.title}
+          ></TextField>
+        </div>
+
+        <div className="col-12 my-2">
+          <TextField
+            fullWidth
+            variant="outlined"
+            label="keywords"
+            size="small"
+            name="keywords"
+            onChange={e=>handleChange("keywords",e.target.value)}
+            value={formData.keywords}
           ></TextField>
         </div>
 

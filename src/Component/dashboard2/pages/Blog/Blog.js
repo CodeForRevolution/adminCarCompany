@@ -114,6 +114,16 @@ const Blog = () => {
                               >
                                 {item.subHeading}
                               </div>
+
+
+                              <div
+                                className="col-12 my-2 p-0 "
+                                style={{ fontWeight: 700 }}
+                              >
+                                {item.title}
+                              </div>
+
+
                               <div className="col-12 p-0"> {item.content}</div>
                             </div>
                           </div>
@@ -293,11 +303,11 @@ const style = {
   height: "auto",
   mwidth: "500px",
   bgcolor: "background.paper",
-
   p: 0,
   m: 0,
   maxWidth: "500px",
-  overflow: "auto",
+  maxHeight:"95%",
+  overflow: "scroll",
   boxShadow: "10px 15px 15px rgba(0, 0, 0, 0.99)",
   WebkitClipPath:
     "polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px)",
